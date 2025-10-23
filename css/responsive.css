@@ -14,6 +14,16 @@ DESKTOP
     .container {
         max-width: 1028px;
     }
+    /* SKILLS */
+
+    .softSkills_badge{
+        position: static ! important;
+        transform: none ! important;
+
+    }
+    .softSkills__book_icon{
+        display: none;
+    }
 }
 /* =======
 TABLET & SMALL LAPTOP
@@ -22,25 +32,31 @@ TABLET & SMALL LAPTOP
     .container {
         max-width: 1024px;
     }
-}
-/* Header */
-.header__img {
-    flex-direction: column;
-}
-.header__colum--left {
+    section{
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    /* Header */
+    .header__img {
+        flex-direction: column;
+    }
+    .header__column--left {
     flex-direction: column;
     align-items: center;
-}
-.header__content--left {
-    text-align: center;
-    & p{
+    }
+    .header__content--left {
+        text-align: center;
+
+        & p{
         text-align: center;
         max-width: 320px;
     }
-}
-.header__column--right {
+    }
+    .header__column--right {
     text-align: center;
     align-items: center;
+    }
+    
 }
 /* =======
 SMALL TABLET - LANDSCAPE MODE
@@ -49,16 +65,28 @@ SMALL TABLET - LANDSCAPE MODE
     .container {
         max-width: 640px;
     }
-}
-/* About Me */
+    /* About Me */
 .aboutMe__section{
     margin: 80px auto;
  & img{
     display: none;
- }
+    }
+}
+    
+
+/* SKILLS */
+.skills__grid_container{
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    grid-template-rows: repeat(2,minmax(280px, auto));  
+
+    & .skills__grid_item{
+        padding: 1rem 1rem;
+        grid-column: span 1 ! important;
+        grid-row: span 1 ! important;
+    }
 }
 
-
+}
 /* =======
 PHONE
  ====== */
