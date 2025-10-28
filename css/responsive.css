@@ -66,26 +66,24 @@ SMALL TABLET - LANDSCAPE MODE
         max-width: 640px;
     }
     /* About Me */
-.aboutMe__section{
-    margin: 80px auto;
- & img{
-    display: none;
+    .aboutMe__section{
+        margin: 80px auto;
+        & img{
+            display: none;
+        }
     }
-}
-    
 
-/* SKILLS */
-.skills__grid_container{
-    grid-template-columns: repeat(1, minmax(200px, 1fr));
-    grid-template-rows: repeat(2,minmax(280px, auto));  
+    /* SKILLS */
+    .skills__grid_container{
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+        grid-template-rows: repeat(4,minmax(280px, auto));  
 
-    & .skills__grid_item{
-        padding: 1rem 1rem;
-        grid-column: span 1 ! important;
-        grid-row: span 1 ! important;
+        & .skills__grid_item {
+            padding: 1rem 1rem;
+            grid-column: span 1 ! important;
+            grid-row: span 1 ! important;
+        }   
     }
-}
-
 }
 /* =======
 PHONE
@@ -105,8 +103,7 @@ PHONE
         line-height: 2.5rem;
         text-align: center;
     }
-}
-/* Header */
+    /* Header */
 header{
     margin-top: 20px;
 }
@@ -122,5 +119,10 @@ header{
 }
 .aboutMe__content_container{
     border-radius: 2rem;
-
 }
+/* Footer */
+footer{
+    padding: 0;
+}
+}
+
